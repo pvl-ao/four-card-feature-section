@@ -1,0 +1,26 @@
+// 768px
+@media (min-width: 48rem) {
+  :root {
+    --introduction-margin: 4rem 0 4rem 0;
+    --entry-margin: 0 18% 0 18%;
+    --intro-subheading-font-size: 3rem;
+    --intro-heading-font-size: 3rem;
+    --cards-columns: 1fr 1fr;
+    --cards-width: 72.4rem;
+    --card-content-width: 35rem;
+    --card-content-heigth: 25rem;
+  }
+
+  html {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+}
