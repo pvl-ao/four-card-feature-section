@@ -1,0 +1,128 @@
+/* ----- Google Fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* ----- CSS Reset ----- */
+@import 'css-reset';
+
+/* ----- Variables ----- */
+:root {
+  --introduction-margin: 7.8rem 0 7.8rem 0;
+  --entry-margin: 0 8% 0 8%;
+  --intro-subheading-font-size: 2.4rem;
+  --intro-heading-font-size: 2.4rem;
+  --cards-columns: 1fr;
+  --cards-width: 31.1rem;
+  --card-content-width: 31.1rem;
+  --card-content-heigth: 22.2rem;
+  --card-content-padding: 2.7rem 2.7rem;
+  --card-heading-margin-bottom: 0.5rem;
+  --card-text-margin-bottom: 3.6rem;
+  --card-img-width: 5.6rem;
+}
+
+/* ----- Colors ----- */
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ----- Entry Section ----- */
+.introduction {
+  margin: var(--introduction-margin);
+}
+
+.entry {
+  text-align: center;
+  margin: var(--entry-margin);
+}
+
+.intro-subheading {
+  font-size: var(--intro-subheading-font-size);
+  font-weight: 200;
+  color: $very-dark-blue;
+}
+
+.intro-heading {
+  font-size: var(--intro-heading-font-size);
+  font-weight: 600;
+  color: $very-dark-blue;
+  margin-bottom: 1.6rem;
+}
+
+.intro-text {
+  color: $grayish-blue;
+  margin-bottom: 6.8rem;
+}
+
+/* ----- Cards ----- */
+
+.cards {
+  display: grid;
+  margin: 0 auto;
+  width: var(--cards-width);
+  grid-template-columns: var(--cards-columns);
+  gap: 2.4rem;
+}
+
+.card-content {
+  width: var(--card-content-width);
+  height: var(--card-content-heigth);
+  box-shadow: 0rem 1.875rem 2.5rem -1.25rem $grayish_blue;
+  padding: var(--card-content-padding);
+}
+
+.card-heading {
+  color: $very-dark-blue;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: var(--card-heading-margin-bottom);
+}
+
+.card-text {
+  color: $grayish-blue;
+  margin-bottom: var(--card-text-margin-bottom);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.card-img {
+  float: right;
+  width: var(--card-img-width);
+}
+
+.supervisor-card {
+  .card-content {
+    border-top: 0.3rem solid $cyan;
+    border-radius: 0.5rem;
+  }
+}
+
+.team-builder-card {
+  .card-content {
+    border-top: 0.3rem solid $red;
+    border-radius: 0.5rem;
+  }
+}
+
+.karma-card {
+  .card-content {
+    border-top: 0.3rem solid $orange;
+    border-radius: 0.5rem;
+  }
+}
+
+.calculator-card {
+  .card-content {
+    border-top: 0.3rem solid $blue;
+    border-radius: 0.5rem;
+  }
+}
